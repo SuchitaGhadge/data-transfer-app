@@ -1,0 +1,5 @@
+<p>parent works!</p>
+<button (click)="onClick()">Click me</button>
+<div *ngIf="isClicked">
+    <app-child [dataArray] = 'dataArray' (userSelectEvent) = "onUserSelect($event)"></app-child>
+</div>

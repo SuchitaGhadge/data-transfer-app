@@ -1,0 +1,22 @@
+<p>child works!</p>
+
+<div *ngIf="dataArray.length">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of dataArray">
+                <td (click)="selectedRow(item)">
+                    {{item.name}}
+                </td>
+                <td>
+                    {{item.age}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
