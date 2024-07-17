@@ -1,12 +1,16 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import {ResData} from '../../interfaces/res-data'
+import { ChildComponent } from '../child/child.component';
+import { FormsModule } from '@angular/forms';
 
 // import { DataTransferService } from 'src/app/services/data-transfer.service';
 
 @Component({
-  selector: 'app-parent',
-  templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.css']
+    selector: 'app-parent',
+    templateUrl: './parent.component.html',
+    styleUrls: ['./parent.component.css'],
+    standalone: true,
+    imports: [FormsModule, ChildComponent]
 })
 
 

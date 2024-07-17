@@ -2,9 +2,10 @@ import { Component, OnInit, AfterViewInit, Input, Output, EventEmitter } from '@
 // import { DataTransferService } from 'src/app/services/data-transfer.service';
 import {ResData} from '../../interfaces/res-data'
 @Component({
-  selector: 'app-child',
-  templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css']
+    selector: 'app-child',
+    templateUrl: './child.component.html',
+    styleUrls: ['./child.component.css'],
+    standalone: true
 })
 export class ChildComponent implements OnInit, AfterViewInit {
 
