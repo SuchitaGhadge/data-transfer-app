@@ -1,4 +1,6 @@
-<p>parent works!</p>
+<input type="text" [(ngModel)]="userName">
+
+<h1>Hello {{userName}}</h1>
 <button (click)="onClick()">Click me</button>
 <div *ngIf="isClicked">
     <app-child [dataArray] = 'dataArray' (userSelectEvent) = "onUserSelect($event)"></app-child>

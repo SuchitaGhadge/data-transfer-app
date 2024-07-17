@@ -12,7 +12,7 @@ import { ChildComponent } from '../child/child.component';
 
 
 export class ParentComponent implements OnInit, AfterViewInit {
-  
+  userName : string = ''
   dataArray:ResData[] = []
   isClicked:boolean = false
   // arrData:any
