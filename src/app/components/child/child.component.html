@@ -1,22 +1,26 @@
 <p>child works!</p>
 
-<div *ngIf="dataArray.length">
+@if (dataArray.length) {
+  <div>
     <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let item of dataArray">
-                <td (click)="selectedRow(item)">
-                    {{item.name}}
-                </td>
-                <td>
-                    {{item.age}}
-                </td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of dataArray; track item) {
+          <tr>
+            <td (click)="selectedRow(item)">
+              {{item.name}}
+            </td>
+            <td>
+              {{item.age}}
+            </td>
+          </tr>
+        }
+      </tbody>
     </table>
-</div>
+  </div>
+}

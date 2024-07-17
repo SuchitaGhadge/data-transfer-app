@@ -2,6 +2,8 @@
 
 <h1>Hello {{userName}}</h1>
 <button (click)="onClick()">Click me</button>
-<div *ngIf="isClicked">
+@if (isClicked) {
+  <div>
     <app-child [dataArray] = 'dataArray' (userSelectEvent) = "onUserSelect($event)"></app-child>
-</div>
+  </div>
+}
