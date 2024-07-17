@@ -9,6 +9,9 @@ const routes: Routes = [
   },
   {
     path: 'child', component : ChildComponent
+  },
+  {
+    path: '', redirectTo: 'parent', pathMatch: 'full'
   }
 ];
 
