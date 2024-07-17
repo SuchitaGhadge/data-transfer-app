@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import {ResData} from '../../interfaces/res-data'
-import { ChildComponent } from '../child/child.component';
+
 // import { DataTransferService } from 'src/app/services/data-transfer.service';
 
 @Component({
